@@ -1,0 +1,14 @@
+curl "https://myaddress.xyz/api/v1/book/118269/page/$1/img" \
+  -H 'authority: shit' \
+  -H 'pragma: no-cache' \
+  -H 'cache-control: no-cache' \
+  -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="98"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-mode: no-cors' \
+  -H 'sec-fetch-dest: image' \
+  -H 'referer: https://myaddress.xyz/reader/book/118269' \
+  -H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8' \
+  -H 'cookie: _ym_uid=; _ym_d=; LANEBSWS_orderMode=""; lan_access_token=lanananananoo.eyBanana.Base64; lan_refresh_token=; lan_unique_user=; _ga=; _ym_isad=2; sessid=; _ym_visorc=w; _gid=; _gat_UA-136619064-3=1' \
+  --compressed > page-$1.svg
